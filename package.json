@@ -1,0 +1,14 @@
+{
+  "name": "livematch",
+  "version": "0.1.0",
+  "description": "A live match widget minute by minute",
+  "main": "index.js",
+  "scripts": {
+    "assets": "node-sass -o build/ src/app.scss"
+  },
+  "author": "Alejandro Moreno",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.4.0"
+  }
+}
