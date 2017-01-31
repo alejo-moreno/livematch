@@ -8,9 +8,11 @@ html {
   border: solid 0.5px #f3f3f3; }
   .cover-team {
     display: flex;
-    margin-bottom: 5px; }
+    align-items: center;
+    margin-bottom: 1px; }
     .cover-team span {
-      width: 15px; }
+      width: 15px;
+      height: 60px; }
     .cover-team-logo {
       margin-left: 20px;
       margin-right: 20px;

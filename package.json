@@ -11,6 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "browserify": "^14.0.0",
+    "lodash.sortbyorder": "^3.4.4",
+    "lodash.union": "^4.6.0",
     "node-sass": "^4.4.0",
     "watchify": "^3.9.0"
   }

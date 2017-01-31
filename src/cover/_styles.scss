@@ -5,9 +5,12 @@
     border: solid 0.5px #f3f3f3;
     &-team {
         display: flex;      
-        margin-bottom: 5px;  
+        align-items: center;
+        margin-bottom: 1px;  
+        
         span {            
-            width: 15px;            
+            width: 15px;  
+            height: 60px;          
         }
         &-logo {
                 margin-left: 20px;
