@@ -4,11 +4,14 @@
   "description": "A live match widget minute by minute",
   "main": "index.js",
   "scripts": {
-    "assets": "node-sass -o build/ src/app.scss"
+    "styles": "node-sass -wo build/ src/widget.scss",
+    "build": "npm run styles & watchify src/index.js -o build/bundle.js -v"
   },
   "author": "Alejandro Moreno",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.4.0"
+    "browserify": "^14.0.0",
+    "node-sass": "^4.4.0",
+    "watchify": "^3.9.0"
   }
 }
