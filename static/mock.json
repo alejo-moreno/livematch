@@ -1,0 +1,1326 @@
+{
+    "status": "success",
+    "data": {
+        "permalink": "http://www.univision.com/deportes/futbol/tigres-vs-america-2016-12-25",
+        "sports-content": {
+            "sports-event": {
+                "team": [
+                    {
+                        "team-metadata": {
+                            "@alignment": "away",
+                            "name": {
+                                "@first": "América",
+                                "@full": "América",
+                                "@abbreviation": "América",
+                                "@nickname": "América"
+                            },
+                            "@team-key": "1292"
+                        },
+                        "team-stats": {
+                            "@score": "1",
+                            "@event-outcome": "tie",
+                            "@score-opposing": "1"
+                        },
+                        "@id": "t.1292"
+                    },
+                    {
+                        "team-metadata": {
+                            "@alignment": "home",
+                            "name": {
+                                "@first": "Tigres",
+                                "@full": "Tigres",
+                                "@abbreviation": "Tigres",
+                                "@nickname": "Tigres"
+                            },
+                            "@team-key": "1294"
+                        },
+                        "team-stats": {
+                            "@score": "1",
+                            "@event-outcome": "tie",
+                            "@score-opposing": "1"
+                        },
+                        "@id": "t.1294"
+                    }
+                ],                
+                "event-actions": {
+                    "event-actions-soccer": {
+                        "action-soccer-substitution": [
+                            {
+                                "@period-value": "3",
+                                "@id": "a.1400167659",
+                                "@minutes-elapsed": "108",
+                                "@comment": "Cambio en América, ingresa al campo Javier Güemez sustituyendo a Michael Arroyo."
+                            },
+                            {
+                                "@period-value": "2",
+                                "@id": "a.88984494",
+                                "@minutes-elapsed": "93",
+                                "@comment": "Cambio en Tigres, ingresa al campo Alberto Acosta sustituyendo a Jorge Iván Estrada."
+                            },
+                            {
+                                "@period-value": "2",
+                                "@id": "a.1359100061",
+                                "@minutes-elapsed": "92",
+                                "@comment": "Cambio en Tigres, ingresa al campo José Arturo Rivas sustituyendo a Ismael Sosa."
+                            },
+                            {
+                                "@period-value": "2",
+                                "@id": "a.1350496853",
+                                "@minutes-elapsed": "85",
+                                "@comment": "Cambio en América, ingresa al campo Edson Álvarez sustituyendo a José Daniel Guerrero debido a una lesión."
+                            },
+                            {
+                                "@period-value": "2",
+                                "@id": "a.1809668871",
+                                "@minutes-elapsed": "79",
+                                "@comment": "Cambio en América, ingresa al campo Silvio Romero sustituyendo a Oribe Peralta."
+                            },
+                            {
+                                "@period-value": "2",
+                                "@id": "a.1714125407",
+                                "@minutes-elapsed": "55",
+                                "@comment": "Cambio en Tigres, ingresa al campo Damián Álvarez sustituyendo a Javier Aquino debido a una lesión."
+                            }
+                        ],
+                        "action-soccer-score": [
+                            {
+                                "@score-attempt-type": "regular",
+                                "@period-value": "4",
+                                "@id": "a.777681441",
+                                "@minutes-elapsed": "125",
+                                "@comment": "¡Goooool!  Tigres 1(3), América 1. Guido Pizarro (Tigres) convirtió el penalti  Disparo con la derecha disparo rastrero, junto al palo izquierdo."
+                            },
+                            {
+                                "@score-attempt-type": "regular",
+                                "@period-value": "4",
+                                "@id": "a.1410421278",
+                                "@minutes-elapsed": "123",
+                                "@comment": "¡Goooool!  Tigres 1(2), América 1. Juninho (Tigres) convirtió el penalti  Disparo con la derecha por el lado derecho de la portería."
+                            },
+                            {
+                                "@score-attempt-type": "regular",
+                                "@period-value": "4",
+                                "@id": "a.653596139",
+                                "@minutes-elapsed": "121",
+                                "@comment": "¡Goooool!  Tigres 1(1), América 1. André-Pierre Gignac (Tigres) convirtió el penalti  Disparo con la derecha al ángulo superior izquierdo."
+                            },
+                            {
+                                "@score-attempt-type": "regular",
+                                "@period-value": "3",
+                                "@id": "a.508064338",
+                                "@minutes-elapsed": "119",
+                                "@comment": "¡Gooooool!  Tigres 1, América 1. Jesús Dueñas (Tigres) disparo de cabeza desde el centro del área por el lado derecho de la portería. Asistencia de Jürgen Damm con un centro al área."
+                            },
+                            {
+                                "@score-attempt-type": "regular",
+                                "@period-value": "3",
+                                "@id": "a.1624987373",
+                                "@minutes-elapsed": "95",
+                                "@comment": "¡Gooooool!  Tigres 0, América 1. Edson Álvarez (América) disparo de cabeza desde el centro del área por el lado derecho de la portería. Asistencia de Pablo Aguilar con un pase de cabeza tras un saque de esquina."
+                            }
+                        ],
+                        "action-soccer-penalty": [
+                            {
+                                "@period-value": "3",
+                                "@penalty-level": "yellow-card",
+                                "@id": "a.517089110",
+                                "@minutes-elapsed": "118",
+                                "@comment": "Miguel Samudio (América) ha sido amonestado con tarjeta amarilla."
+                            },
+                            {
+                                "@period-value": "3",
+                                "@penalty-level": "red-card",
+                                "@id": "a.996161072",
+                                "@minutes-elapsed": "109",
+                                "@comment": "Paolo Goltz (América) ha recibido una tarjeta roja por pelearse."
+                            },
+                            {
+                                "@period-value": "3",
+                                "@penalty-level": "red-card",
+                                "@id": "a.399614542",
+                                "@minutes-elapsed": "109",
+                                "@comment": "José Arturo Rivas (Tigres) ha recibido una tarjeta roja por pelearse."
+                            },
+                            {
+                                "@period-value": "3",
+                                "@penalty-level": "red-card",
+                                "@id": "a.2051695833",
+                                "@minutes-elapsed": "109",
+                                "@comment": "Ventura Alvarado (América) ha recibido una tarjeta roja por pelearse."
+                            },
+                            {
+                                "@period-value": "3",
+                                "@penalty-level": "yellow-card",
+                                "@id": "a.1461941729",
+                                "@minutes-elapsed": "106",
+                                "@comment": "André-Pierre Gignac (Tigres) ha sido amonestado con tarjeta amarilla."
+                            },
+                            {
+                                "@period-value": "3",
+                                "@penalty-level": "yellow-card",
+                                "@id": "a.1270705921",
+                                "@minutes-elapsed": "106",
+                                "@comment": "Carlos Quintero (América) ha sido amonestado con tarjeta amarilla."
+                            },
+                            {
+                                "@period-value": "3",
+                                "@penalty-level": "yellow-red-card",
+                                "@id": "a.958490153",
+                                "@minutes-elapsed": "102",
+                                "@comment": "Rubens Sambueza (América) segunda tarjeta amarilla por juego peligroso."
+                            },
+                            {
+                                "@period-value": "3",
+                                "@penalty-level": "yellow-card",
+                                "@id": "a.1442276949",
+                                "@minutes-elapsed": "101",
+                                "@comment": "Hugo Ayala (Tigres) ha sido amonestado con tarjeta amarilla."
+                            },
+                            {
+                                "@period-value": "3",
+                                "@penalty-level": "yellow-card",
+                                "@id": "a.1889599992",
+                                "@minutes-elapsed": "91",
+                                "@comment": "Pablo Aguilar (América) ha sido amonestado con tarjeta amarilla por juego peligroso."
+                            },
+                            {
+                                "@period-value": "2",
+                                "@penalty-level": "yellow-red-card",
+                                "@id": "a.136390285",
+                                "@minutes-elapsed": "90",
+                                "@comment": "Jorge Torres Nilo (Tigres) segunda tarjeta amarilla por juego peligroso."
+                            },
+                            {
+                                "@period-value": "2",
+                                "@penalty-level": "yellow-card",
+                                "@id": "a.460511795",
+                                "@minutes-elapsed": "69",
+                                "@comment": "Jorge Torres Nilo (Tigres) ha sido amonestado con tarjeta amarilla."
+                            },
+                            {
+                                "@period-value": "2",
+                                "@penalty-level": "yellow-card",
+                                "@id": "a.152123735",
+                                "@minutes-elapsed": "60",
+                                "@comment": "Michael Arroyo (América) ha sido amonestado con tarjeta amarilla por juego peligroso."
+                            },
+                            {
+                                "@period-value": "2",
+                                "@penalty-level": "yellow-card",
+                                "@id": "a.827113444",
+                                "@minutes-elapsed": "52",
+                                "@comment": "Rubens Sambueza (América) ha sido amonestado con tarjeta amarilla."
+                            },
+                            {
+                                "@period-value": "1",
+                                "@penalty-level": "yellow-card",
+                                "@id": "a.1936322451",
+                                "@minutes-elapsed": "35",
+                                "@comment": "Bruno Valdez (América) ha sido amonestado con tarjeta amarilla por juego peligroso."
+                            },
+                            {
+                                "@period-value": "1",
+                                "@penalty-level": "yellow-card",
+                                "@id": "a.1218198184",
+                                "@minutes-elapsed": "22",
+                                "@comment": "Guido Pizarro (Tigres) ha sido amonestado con tarjeta amarilla."
+                            }
+                        ],
+                        "action-soccer-play": [
+                            {
+                                "@play-type": "game-end",
+                                "@period-value": "4",
+                                "@id": "a.191027175",
+                                "@minutes-elapsed": "127",
+                                "@comment": "Final del partido' Tigres 1(3), América 1."
+                            },
+                            {
+                                "@play-type": "period-end",
+                                "@period-value": "4",
+                                "@id": "a.436607297",
+                                "@minutes-elapsed": "127",
+                                "@comment": "Final Penaltis' Tigres 1(3), América 1."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "shootout",
+                                "@score-attempt-result": "saved",
+                                "@period-value": "4",
+                                "@id": "a.438388259",
+                                "@minutes-elapsed": "126",
+                                "@comment": "¡Penalti fallado!Javier Güemez (América) ha desperdiciado una clara ocasión de anotar,  Disparo con la derecha parado  junto al lado derecho de la portería."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "shootout",
+                                "@score-attempt-result": "saved",
+                                "@period-value": "4",
+                                "@id": "a.926328059",
+                                "@minutes-elapsed": "124",
+                                "@comment": "¡Penalti fallado!Silvio Romero (América) ha desperdiciado una clara ocasión de anotar,  Disparo con la derecha parado  Por arriba en el centro del arco."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "shootout",
+                                "@score-attempt-result": "saved",
+                                "@period-value": "4",
+                                "@id": "a.542898508",
+                                "@minutes-elapsed": "122",
+                                "@comment": "¡Penalti fallado!William Da Silva (América) ha desperdiciado una clara ocasión de anotar,  zurdazo parado  por abajo a la izquierda."
+                            },
+                            {
+                                "@play-type": "period-start",
+                                "@period-value": "4",
+                                "@id": "a.1755109991",
+                                "@minutes-elapsed": "121",
+                                "@comment": "Empieza Penaltis Tigres 1, América 1."
+                            },
+                            {
+                                "@play-type": "period-end",
+                                "@period-value": "3",
+                                "@id": "a.2093737123",
+                                "@minutes-elapsed": "121",
+                                "@comment": "Final tiempo de descuento de la segunda parte' Tigres 1, América 1."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "3",
+                                "@id": "a.424463115",
+                                "@minutes-elapsed": "118",
+                                "@comment": "Jürgen Damm (Tigres) ha recibido una falta en la banda derecha."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "3",
+                                "@id": "a.1953706826",
+                                "@minutes-elapsed": "118",
+                                "@comment": "Falta de William Da Silva (América)."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "missed",
+                                "@period-value": "3",
+                                "@id": "a.102781606",
+                                "@minutes-elapsed": "117",
+                                "@comment": "disparo que sale desviado de Guido Pizarro (Tigres) disparo de cabeza desde el centro del área que se le va demasiado alto. Asistencia de Damián Álvarez con un centro al área."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "3",
+                                "@id": "a.2018495141",
+                                "@minutes-elapsed": "114",
+                                "@comment": "Falta de Jürgen Damm (Tigres)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "3",
+                                "@id": "a.2087365589",
+                                "@minutes-elapsed": "114",
+                                "@comment": "Miguel Samudio (América) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "blocked",
+                                "@period-value": "3",
+                                "@id": "a.1553498028",
+                                "@minutes-elapsed": "112",
+                                "@comment": "Remate rechazado de André-Pierre Gignac (Tigres),  Disparo con la derecha desde el centro del área. Asistencia de Jürgen Damm."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "3",
+                                "@id": "a.957031036",
+                                "@minutes-elapsed": "106",
+                                "@comment": "Saque de esquina,  América. Saque de esquina cometido por Hugo Ayala."
+                            },
+                            {
+                                "@play-type": "period-start",
+                                "@period-value": "3",
+                                "@id": "a.1657971972",
+                                "@minutes-elapsed": "106",
+                                "@comment": "Empieza tiempo de descuento de la segunda parte Tigres 0, América 1."
+                            },
+                            {
+                                "@play-type": "period-end",
+                                "@period-value": "3",
+                                "@id": "a.1032489918",
+                                "@minutes-elapsed": "115",
+                                "@comment": "Final tiempo de descuento del primer tiempo' Tigres 0, América 1."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "3",
+                                "@id": "a.1439982124",
+                                "@minutes-elapsed": "114",
+                                "@comment": "Falta de Alberto Acosta (Tigres)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "3",
+                                "@id": "a.1077949159",
+                                "@minutes-elapsed": "114",
+                                "@comment": "Renato Ibarra (América) ha recibido una falta en la banda derecha."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "3",
+                                "@id": "a.800251029",
+                                "@minutes-elapsed": "105",
+                                "@comment": "Falta de José Arturo Rivas (Tigres)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "3",
+                                "@id": "a.1154253825",
+                                "@minutes-elapsed": "105",
+                                "@comment": "Renato Ibarra (América) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "3",
+                                "@id": "a.1027136046",
+                                "@minutes-elapsed": "102",
+                                "@comment": "Hugo Ayala (Tigres) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "3",
+                                "@id": "a.1192920496",
+                                "@minutes-elapsed": "102",
+                                "@comment": "Falta de Rubens Sambueza (América)."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "saved",
+                                "@period-value": "3",
+                                "@id": "a.2081987973",
+                                "@minutes-elapsed": "102",
+                                "@comment": "Tiro atajado Por arriba en el centro del arco. Jesús Dueñas (Tigres) disparo de cabeza desde el centro del área. Asistencia de Damián Álvarez con un centro al área."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "3",
+                                "@id": "a.295133807",
+                                "@minutes-elapsed": "101",
+                                "@comment": "Hugo Ayala (Tigres) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "3",
+                                "@id": "a.1022243101",
+                                "@minutes-elapsed": "101",
+                                "@comment": "Falta de Silvio Romero (América)."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "3",
+                                "@id": "a.1023966239",
+                                "@minutes-elapsed": "101",
+                                "@comment": "Falta de José Arturo Rivas (Tigres)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "3",
+                                "@id": "a.1152120266",
+                                "@minutes-elapsed": "101",
+                                "@comment": "Bruno Valdez (América) ha recibido una falta en la banda derecha."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "3",
+                                "@id": "a.637445156",
+                                "@minutes-elapsed": "100",
+                                "@comment": "Saque de esquina,  América. Saque de esquina cometido por Juninho."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "3",
+                                "@id": "a.1154471127",
+                                "@minutes-elapsed": "99",
+                                "@comment": "Falta de André-Pierre Gignac (Tigres)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "3",
+                                "@id": "a.1041599385",
+                                "@minutes-elapsed": "99",
+                                "@comment": "Paolo Goltz (América) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "3",
+                                "@id": "a.1379358675",
+                                "@minutes-elapsed": "96",
+                                "@comment": "Alberto Acosta (Tigres) ha recibido una falta en la banda izquierda."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "3",
+                                "@id": "a.1551176277",
+                                "@minutes-elapsed": "96",
+                                "@comment": "Falta de Bruno Valdez (América)."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "3",
+                                "@id": "a.453503883",
+                                "@minutes-elapsed": "95",
+                                "@comment": "Saque de esquina,  América. Saque de esquina cometido por Guido Pizarro."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "blocked",
+                                "@period-value": "3",
+                                "@id": "a.1242435480",
+                                "@minutes-elapsed": "95",
+                                "@comment": "Remate rechazado de William Da Silva (América),  zurdazo desde fuera del área."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "3",
+                                "@id": "a.1817858698",
+                                "@minutes-elapsed": "91",
+                                "@comment": "André-Pierre Gignac (Tigres) ha recibido una falta en la banda derecha."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "3",
+                                "@id": "a.2106116243",
+                                "@minutes-elapsed": "91",
+                                "@comment": "Falta de Pablo Aguilar (América)."
+                            },
+                            {
+                                "@play-type": "period-start",
+                                "@period-value": "3",
+                                "@id": "a.1658288385",
+                                "@minutes-elapsed": "91",
+                                "@comment": "Empieza tiempo de descuento del primer tiempo Tigres 0, América 0."
+                            },
+                            {
+                                "@play-type": "period-end",
+                                "@period-value": "2",
+                                "@id": "a.852056798",
+                                "@minutes-elapsed": "94",
+                                "@comment": "Final segunda parte' Tigres 0, América 0."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "2",
+                                "@id": "a.1665537967",
+                                "@minutes-elapsed": "90",
+                                "@comment": "Falta de Jorge Torres Nilo (Tigres)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "2",
+                                "@id": "a.1895277996",
+                                "@minutes-elapsed": "90",
+                                "@comment": "Renato Ibarra (América) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "2",
+                                "@id": "a.237021492",
+                                "@minutes-elapsed": "89",
+                                "@comment": "Falta de Damián Álvarez (Tigres)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "2",
+                                "@id": "a.83738821",
+                                "@minutes-elapsed": "89",
+                                "@comment": "Bruno Valdez (América) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "2",
+                                "@id": "a.2059707198",
+                                "@minutes-elapsed": "87",
+                                "@comment": "André-Pierre Gignac (Tigres) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "2",
+                                "@id": "a.399487005",
+                                "@minutes-elapsed": "87",
+                                "@comment": "Falta de Pablo Aguilar (América)."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "2",
+                                "@id": "a.544835695",
+                                "@minutes-elapsed": "87",
+                                "@comment": "Falta de Damián Álvarez (Tigres)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "2",
+                                "@id": "a.210418326",
+                                "@minutes-elapsed": "87",
+                                "@comment": "Edson Álvarez (América) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "2",
+                                "@id": "a.1372892722",
+                                "@minutes-elapsed": "85",
+                                "@comment": "Falta de Jürgen Damm (Tigres)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "2",
+                                "@id": "a.1909969796",
+                                "@minutes-elapsed": "85",
+                                "@comment": "Rubens Sambueza (América) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "delayed-end",
+                                "@period-value": "2",
+                                "@id": "a.386225577",
+                                "@minutes-elapsed": "84",
+                                "@comment": "Se reanuda el partido."
+                            },
+                            {
+                                "@play-type": "delayed-start",
+                                "@period-value": "2",
+                                "@id": "a.410183884",
+                                "@minutes-elapsed": "84",
+                                "@comment": "El juego está detenido  debido a una lesión de José Daniel Guerrero (América)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "2",
+                                "@id": "a.1093296407",
+                                "@minutes-elapsed": "83",
+                                "@comment": "Jesús Dueñas (Tigres) ha recibido una falta en la banda izquierda."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "2",
+                                "@id": "a.1030009858",
+                                "@minutes-elapsed": "83",
+                                "@comment": "Falta de José Daniel Guerrero (América)."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "off-post",
+                                "@period-value": "2",
+                                "@id": "a.767917856",
+                                "@minutes-elapsed": "82",
+                                "@comment": "André-Pierre Gignac (Tigres) remata al travesaño,  Disparo con la derecha desde fuera del área. Asistencia de Damián Álvarez."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "saved",
+                                "@period-value": "2",
+                                "@id": "a.254711300",
+                                "@minutes-elapsed": "81",
+                                "@comment": "Tiro atajado por abajo a la izquierda. Bruno Valdez (América) disparo de cabeza desde el centro del área. Asistencia de Rubens Sambueza con un centro al área."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "2",
+                                "@id": "a.908906668",
+                                "@minutes-elapsed": "80",
+                                "@comment": "Saque de esquina,  América. Saque de esquina cometido por Jorge Torres Nilo."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "blocked",
+                                "@period-value": "2",
+                                "@id": "a.59934925",
+                                "@minutes-elapsed": "80",
+                                "@comment": "Remate rechazado de Renato Ibarra (América),  Disparo con la derecha desde fuera del área. Asistencia de Silvio Romero."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "2",
+                                "@id": "a.1252050653",
+                                "@minutes-elapsed": "78",
+                                "@comment": "Falta de André-Pierre Gignac (Tigres)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "2",
+                                "@id": "a.2037657042",
+                                "@minutes-elapsed": "78",
+                                "@comment": "José Daniel Guerrero (América) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "2",
+                                "@id": "a.966980147",
+                                "@minutes-elapsed": "76",
+                                "@comment": "Ismael Sosa (Tigres) ha recibido una falta en la banda izquierda."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "2",
+                                "@id": "a.1553929968",
+                                "@minutes-elapsed": "76",
+                                "@comment": "Falta de William Da Silva (América)."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "missed",
+                                "@period-value": "2",
+                                "@id": "a.1696452145",
+                                "@minutes-elapsed": "74",
+                                "@comment": "disparo que sale desviado de Juninho (Tigres) Disparo con la derecha desde más de 30 metros el balón se pierde por el lado derecho de la portería. Asistencia de Ismael Sosa."
+                            },
+                            {
+                                "@play-type": "offside",
+                                "@period-value": "2",
+                                "@id": "a.1098049832",
+                                "@minutes-elapsed": "73",
+                                "@comment": "Fuera de lugar, América. Michael Arroyo intentó un pase en profundidad pero Oribe Peralta estaba en posición adelantada."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "blocked",
+                                "@period-value": "2",
+                                "@id": "a.1034843673",
+                                "@minutes-elapsed": "73",
+                                "@comment": "Remate rechazado de Michael Arroyo (América),  Disparo con la derecha desde la banda izquierda."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "2",
+                                "@id": "a.593915619",
+                                "@minutes-elapsed": "72",
+                                "@comment": "Falta de Jorge Iván Estrada (Tigres)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "2",
+                                "@id": "a.1001935175",
+                                "@minutes-elapsed": "72",
+                                "@comment": "Michael Arroyo (América) ha recibido una falta en la banda izquierda."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "2",
+                                "@id": "a.1090729601",
+                                "@minutes-elapsed": "68",
+                                "@comment": "Falta de Jorge Torres Nilo (Tigres)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "2",
+                                "@id": "a.1853241231",
+                                "@minutes-elapsed": "68",
+                                "@comment": "Bruno Valdez (América) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "2",
+                                "@id": "a.914867683",
+                                "@minutes-elapsed": "68",
+                                "@comment": "Jorge Iván Estrada (Tigres) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "2",
+                                "@id": "a.900466843",
+                                "@minutes-elapsed": "68",
+                                "@comment": "Falta de Rubens Sambueza (América)."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "off-post",
+                                "@period-value": "2",
+                                "@id": "a.750289223",
+                                "@minutes-elapsed": "67",
+                                "@comment": "Jesús Dueñas (Tigres) remata al travesaño,  disparo de cabeza desde el lado izquierdo dentro del área."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "saved",
+                                "@period-value": "2",
+                                "@id": "a.1921782159",
+                                "@minutes-elapsed": "67",
+                                "@comment": "Tiro atajado Por arriba en el centro del arco. Juninho (Tigres) Disparo con la derecha desde muy lejos por la izquierda y en posición complicada."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "2",
+                                "@id": "a.61542034",
+                                "@minutes-elapsed": "66",
+                                "@comment": "Jesús Dueñas (Tigres) ha recibido una falta en la banda izquierda."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "2",
+                                "@id": "a.1077733447",
+                                "@minutes-elapsed": "66",
+                                "@comment": "Falta de William Da Silva (América)."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "2",
+                                "@id": "a.2129190846",
+                                "@minutes-elapsed": "64",
+                                "@comment": "Falta de Hugo Ayala (Tigres)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "2",
+                                "@id": "a.1382438083",
+                                "@minutes-elapsed": "64",
+                                "@comment": "Rubens Sambueza (América) ha recibido una falta en la banda izquierda."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "missed",
+                                "@period-value": "2",
+                                "@id": "a.466934753",
+                                "@minutes-elapsed": "63",
+                                "@comment": "disparo que sale desviado de Renato Ibarra (América) Disparo con la derecha desde el lado derecho dentro del área muy cerca del palo izquierdo pero sale ligeramente desviado."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "2",
+                                "@id": "a.92977976",
+                                "@minutes-elapsed": "60",
+                                "@comment": "Hugo Ayala (Tigres) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "2",
+                                "@id": "a.1271508626",
+                                "@minutes-elapsed": "60",
+                                "@comment": "Falta de Michael Arroyo (América)."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "2",
+                                "@id": "a.283331728",
+                                "@minutes-elapsed": "58",
+                                "@comment": "Saque de esquina,  América. Saque de esquina cometido por Jorge Iván Estrada."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "missed",
+                                "@period-value": "2",
+                                "@id": "a.351133617",
+                                "@minutes-elapsed": "57",
+                                "@comment": "disparo que sale desviado de Jürgen Damm (Tigres) disparo de cabeza desde el centro del área muy cerca del palo derecho pero salió ligeramente desviado. Asistencia de Damián Álvarez con un centro al área."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "missed",
+                                "@period-value": "2",
+                                "@id": "a.692357741",
+                                "@minutes-elapsed": "56",
+                                "@comment": "disparo que sale desviado de Oribe Peralta (América) zurdazo desde muy cerca muy cerca del palo derecho pero salió ligeramente desviado. Asistencia de Bruno Valdez tras un saque de esquina."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "missed",
+                                "@period-value": "2",
+                                "@id": "a.951140303",
+                                "@minutes-elapsed": "56",
+                                "@comment": "disparo que sale desviado de Bruno Valdez (América) Disparo con la derecha desde el centro del área que se pierde por la izquierda tras un saque de esquina."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "blocked",
+                                "@period-value": "2",
+                                "@id": "a.159762518",
+                                "@minutes-elapsed": "56",
+                                "@comment": "Remate rechazado de Pablo Aguilar (América),  Disparo con la derecha desde el lado derecho dentro del área."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "2",
+                                "@id": "a.1209633461",
+                                "@minutes-elapsed": "55",
+                                "@comment": "Saque de esquina,  América. Saque de esquina cometido por André-Pierre Gignac."
+                            },
+                            {
+                                "@play-type": "delayed-end",
+                                "@period-value": "2",
+                                "@id": "a.1497498036",
+                                "@minutes-elapsed": "55",
+                                "@comment": "Se reanuda el partido."
+                            },
+                            {
+                                "@play-type": "delayed-start",
+                                "@period-value": "2",
+                                "@id": "a.1989904057",
+                                "@minutes-elapsed": "54",
+                                "@comment": "El juego está detenido  debido a una lesión de Javier Aquino (Tigres)."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "2",
+                                "@id": "a.246606860",
+                                "@minutes-elapsed": "53",
+                                "@comment": "Saque de esquina,  América. Saque de esquina cometido por Hugo Ayala."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "blocked",
+                                "@period-value": "2",
+                                "@id": "a.307094722",
+                                "@minutes-elapsed": "53",
+                                "@comment": "Remate rechazado de Renato Ibarra (América),  Disparo con la derecha desde fuera del área."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "2",
+                                "@id": "a.1507677236",
+                                "@minutes-elapsed": "53",
+                                "@comment": "Saque de esquina,  América. Saque de esquina cometido por Jorge Iván Estrada."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "2",
+                                "@id": "a.1783538007",
+                                "@minutes-elapsed": "52",
+                                "@comment": "Saque de esquina,  Tigres. Saque de esquina cometido por Miguel Samudio."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "saved",
+                                "@period-value": "2",
+                                "@id": "a.62523798",
+                                "@minutes-elapsed": "50",
+                                "@comment": "Tiro atajado raso al centro del arco. André-Pierre Gignac (Tigres) Disparo con la derecha desde la banda izquierda. Asistencia de Ismael Sosa."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "2",
+                                "@id": "a.1311061078",
+                                "@minutes-elapsed": "49",
+                                "@comment": "Saque de esquina,  América. Saque de esquina cometido por Jorge Iván Estrada."
+                            },
+                            {
+                                "@play-type": "delayed-end",
+                                "@period-value": "2",
+                                "@id": "a.1502396246",
+                                "@minutes-elapsed": "49",
+                                "@comment": "Se reanuda el partido."
+                            },
+                            {
+                                "@play-type": "delayed-start",
+                                "@period-value": "2",
+                                "@id": "a.1745625076",
+                                "@minutes-elapsed": "48",
+                                "@comment": "El juego está detenido  de  (Tigres)."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "2",
+                                "@id": "a.577299105",
+                                "@minutes-elapsed": "48",
+                                "@comment": "Saque de esquina,  América. Saque de esquina cometido por Javier Aquino."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "2",
+                                "@id": "a.198887118",
+                                "@minutes-elapsed": "48",
+                                "@comment": "Saque de esquina,  América. Saque de esquina cometido por Hugo Ayala."
+                            },
+                            {
+                                "@play-type": "period-start",
+                                "@period-value": "2",
+                                "@id": "a.1894948158",
+                                "@minutes-elapsed": "46",
+                                "@comment": "Empieza segunda parte Tigres 0, América 0."
+                            },
+                            {
+                                "@play-type": "period-end",
+                                "@period-value": "1",
+                                "@id": "a.44022483",
+                                "@minutes-elapsed": "46",
+                                "@comment": "Final primera parte' Tigres 0, América 0."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "1",
+                                "@id": "a.467062701",
+                                "@minutes-elapsed": "45",
+                                "@comment": "Saque de esquina,  América. Saque de esquina cometido por Guido Pizarro."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "missed",
+                                "@period-value": "1",
+                                "@id": "a.1558993542",
+                                "@minutes-elapsed": "43",
+                                "@comment": "disparo que sale desviado de Javier Aquino (Tigres) disparo de cabeza desde el centro del área que se va alto y por la izquierda. Asistencia de Jorge Iván Estrada con un centro al área."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.1257916831",
+                                "@minutes-elapsed": "41",
+                                "@comment": "André-Pierre Gignac (Tigres) ha recibido una falta en la banda izquierda."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.1413431851",
+                                "@minutes-elapsed": "41",
+                                "@comment": "Falta de Paolo Goltz (América)."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "missed",
+                                "@period-value": "1",
+                                "@id": "a.982833920",
+                                "@minutes-elapsed": "39",
+                                "@comment": "disparo que sale desviado de Renato Ibarra (América) Disparo con la derecha desde fuera del área que se va alto y por la izquierda. Asistencia de Oribe Peralta con un pase de cabeza tras el cobro de una falta."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.474320260",
+                                "@minutes-elapsed": "38",
+                                "@comment": "Falta de Juninho (Tigres)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.1732810018",
+                                "@minutes-elapsed": "38",
+                                "@comment": "Oribe Peralta (América) ha recibido una falta en la banda izquierda."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.992679985",
+                                "@minutes-elapsed": "35",
+                                "@comment": "Javier Aquino (Tigres) ha recibido una falta en campo contrario."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.1023445940",
+                                "@minutes-elapsed": "35",
+                                "@comment": "Falta de Bruno Valdez (América)."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "missed",
+                                "@period-value": "1",
+                                "@id": "a.65957022",
+                                "@minutes-elapsed": "33",
+                                "@comment": "disparo que sale desviado de Guido Pizarro (Tigres) disparo de cabeza desde el centro del área que se pierde por la izquierda. Asistencia de Javier Aquino con un centro al área."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "1",
+                                "@id": "a.785546864",
+                                "@minutes-elapsed": "32",
+                                "@comment": "Saque de esquina,  Tigres. Saque de esquina cometido por Moisés Muñoz."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "saved",
+                                "@period-value": "1",
+                                "@id": "a.135853974",
+                                "@minutes-elapsed": "32",
+                                "@comment": "Tiro atajado al ángulo superior derecho. Javier Aquino (Tigres) Disparo con la derecha desde fuera del área."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "1",
+                                "@id": "a.1620042808",
+                                "@minutes-elapsed": "32",
+                                "@comment": "Saque de esquina,  Tigres. Saque de esquina cometido por Miguel Samudio."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.419046558",
+                                "@minutes-elapsed": "31",
+                                "@comment": "Falta de José Daniel Guerrero (América)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.1228158315",
+                                "@minutes-elapsed": "31",
+                                "@comment": "Javier Aquino (Tigres) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "1",
+                                "@id": "a.2044166766",
+                                "@minutes-elapsed": "30",
+                                "@comment": "Saque de esquina,  América. Saque de esquina cometido por Jorge Iván Estrada."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.80407456",
+                                "@minutes-elapsed": "29",
+                                "@comment": "Falta de Rubens Sambueza (América)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.1935280540",
+                                "@minutes-elapsed": "29",
+                                "@comment": "Jorge Iván Estrada (Tigres) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "missed",
+                                "@period-value": "1",
+                                "@id": "a.1168427041",
+                                "@minutes-elapsed": "27",
+                                "@comment": "disparo que sale desviado de André-Pierre Gignac (Tigres) disparo de cabeza desde el centro del área que se pierde por la izquierda. Asistencia de Jürgen Damm con un centro al área."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.1449446609",
+                                "@minutes-elapsed": "22",
+                                "@comment": "Michael Arroyo (América) ha recibido una falta en campo contrario."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.223795538",
+                                "@minutes-elapsed": "22",
+                                "@comment": "Falta de Guido Pizarro (Tigres)."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.145832706",
+                                "@minutes-elapsed": "21",
+                                "@comment": "Falta de Rubens Sambueza (América)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.1527520655",
+                                "@minutes-elapsed": "21",
+                                "@comment": "Guido Pizarro (Tigres) ha recibido una falta en campo contrario."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.1764878931",
+                                "@minutes-elapsed": "20",
+                                "@comment": "Falta de Rubens Sambueza (América)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.1355147204",
+                                "@minutes-elapsed": "20",
+                                "@comment": "Jesús Dueñas (Tigres) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.181080245",
+                                "@minutes-elapsed": "18",
+                                "@comment": "Paolo Goltz (América) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.955179035",
+                                "@minutes-elapsed": "18",
+                                "@comment": "Falta de André-Pierre Gignac (Tigres)."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.1281951839",
+                                "@minutes-elapsed": "17",
+                                "@comment": "Falta de Rubens Sambueza (América)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.1017462880",
+                                "@minutes-elapsed": "17",
+                                "@comment": "Jorge Iván Estrada (Tigres) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.537429520",
+                                "@minutes-elapsed": "15",
+                                "@comment": "Falta de Miguel Samudio (América)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.1206115025",
+                                "@minutes-elapsed": "15",
+                                "@comment": "Ismael Sosa (Tigres) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "1",
+                                "@id": "a.1503431308",
+                                "@minutes-elapsed": "13",
+                                "@comment": "Saque de esquina,  Tigres. Saque de esquina cometido por Miguel Samudio."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "missed",
+                                "@period-value": "1",
+                                "@id": "a.642188570",
+                                "@minutes-elapsed": "12",
+                                "@comment": "disparo que sale desviado de André-Pierre Gignac (Tigres) Disparo con la derecha desde fuera del área que se va alto y desviado por la derecha de tiro libre directo."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.1502575524",
+                                "@minutes-elapsed": "11",
+                                "@comment": "Falta de Paolo Goltz (América)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.1206993240",
+                                "@minutes-elapsed": "11",
+                                "@comment": "Ismael Sosa (Tigres) ha recibido una falta en campo contrario."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.1023815183",
+                                "@minutes-elapsed": "10",
+                                "@comment": "Mano de Pablo Aguilar (América)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.1830215913",
+                                "@minutes-elapsed": "5",
+                                "@comment": "Jürgen Damm (Tigres) ha recibido una falta en la banda derecha."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.495893384",
+                                "@minutes-elapsed": "5",
+                                "@comment": "Falta de Miguel Samudio (América)."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.1392770391",
+                                "@minutes-elapsed": "5",
+                                "@comment": "Falta de Renato Ibarra (América)."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.2058970389",
+                                "@minutes-elapsed": "5",
+                                "@comment": "Guido Pizarro (Tigres) ha recibido una falta en la zona defensiva."
+                            },
+                            {
+                                "@play-type": "corner",
+                                "@score-attempt-type": "corner-kick",
+                                "@period-value": "1",
+                                "@id": "a.1325361052",
+                                "@minutes-elapsed": "3",
+                                "@comment": "Saque de esquina,  Tigres. Saque de esquina cometido por Renato Ibarra."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "blocked",
+                                "@period-value": "1",
+                                "@id": "a.456575249",
+                                "@minutes-elapsed": "2",
+                                "@comment": "Remate rechazado de Jürgen Damm (Tigres),  zurdazo desde fuera del área. Asistencia de Guido Pizarro."
+                            },
+                            {
+                                "@play-type": "shot",
+                                "@score-attempt-type": "regular",
+                                "@score-attempt-result": "saved",
+                                "@period-value": "1",
+                                "@id": "a.1003161940",
+                                "@minutes-elapsed": "2",
+                                "@comment": "Tiro atajado por abajo a la izquierda. Michael Arroyo (América) Disparo con la derecha desde fuera del área."
+                            },
+                            {
+                                "@play-type": "free-kick",
+                                "@period-value": "1",
+                                "@id": "a.492870123",
+                                "@minutes-elapsed": "1",
+                                "@comment": "Renato Ibarra (América) ha recibido una falta en campo contrario."
+                            },
+                            {
+                                "@play-type": "foul",
+                                "@period-value": "1",
+                                "@id": "a.142166768",
+                                "@minutes-elapsed": "1",
+                                "@comment": "Falta de Guido Pizarro (Tigres)."
+                            },
+                            {
+                                "@play-type": "game-start",
+                                "@period-value": "1",
+                                "@id": "a.1281872241",
+                                "@minutes-elapsed": "0",
+                                "@comment": "Empieza primera parte."
+                            },
+                            {
+                                "@play-type": "line-up-announcement",
+                                "@id": "a.1179763409",
+                                "@comment": "Alineaciones confirmadas por parte de ambos equipos. Los protagonistas saltan al campo para iniciar los ejercicios de calentamiento"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "feedGeneratedAt": "2016-12-26T11:42:12-05:00"
+    }
+}

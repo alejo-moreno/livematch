@@ -1,6 +1,6 @@
-.card { 
-     box-sizing: border-box;     
-     height: 180px;
+.card {      
+     height: 160px;
+     font-size: 130%;
     &-container {        
         padding-left: 5px;        
         max-width: 250px;
@@ -28,6 +28,7 @@
             }                       
             i {
                 margin: 0 10px 0 10px;
+                font-size: 1.3em;
             }
             &-title {                
                 margin-right: 10px;                
