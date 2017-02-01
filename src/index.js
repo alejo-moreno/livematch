@@ -13,7 +13,7 @@ function init() {
         var teams = setTeams(data);
         var info = setupData(teams, data);
         info.map(matchEvent => $carouselContainer.append(card.template(matchEvent)));
-        $carouselContainer.slick({slidesToShow: 4, slidesToScroll: 1});
+        $carouselContainer.slick({slidesToShow: 4, variableWidth: true});
     });
 }
 

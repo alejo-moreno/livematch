@@ -2,7 +2,7 @@
 module.exports = {
 	template: function (teams) {
 		var el = `<div class="cover">
-                    <h1>Minuto a Minuto</h1>
+                    <h2>MINUTO A MINUTO</h2>
                     <div class="cover-team"> 				      
 				        <span style="background:${_colorHome}"></span>   
 				        <img src="${_logoHomeUrl}" class="cover-team-logo">				           

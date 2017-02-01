@@ -1,15 +1,19 @@
 .cover {    
     display: flex;
     flex-direction: column;
-    //height: 200px;    
+    border-right: solid 0.5px #d1d1d1;     
+    height: 180px;
     &-team {
         display: flex;      
         align-items: center;
-        margin-bottom: 1px;  
+        position: relative;        
         
         span {            
-            width: 15px;  
-            height: 60px;          
+            width: 5%;  
+            height: 90%;  
+            top: 0;
+            position: absolute;
+
         }
         &-logo {
                 margin-left: 20px;

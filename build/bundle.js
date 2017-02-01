@@ -3714,7 +3714,7 @@ module.exports = {
 module.exports = {
 	template: function (teams) {
 		var el = `<div class="cover">
-                    <h1>Minuto a Minuto</h1>
+                    <h2>MINUTO A MINUTO</h2>
                     <div class="cover-team"> 				      
 				        <span style="background:${_colorHome}"></span>   
 				        <img src="${_logoHomeUrl}" class="cover-team-logo">				           
@@ -3747,7 +3747,7 @@ function init() {
         var teams = setTeams(data);
         var info = setupData(teams, data);
         info.map(matchEvent => $carouselContainer.append(card.template(matchEvent)));
-        $carouselContainer.slick({slidesToShow: 4, slidesToScroll: 1});
+        $carouselContainer.slick({slidesToShow: 4, variableWidth: true});
     });
 }
 
