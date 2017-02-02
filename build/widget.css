@@ -41,7 +41,6 @@ a:hover, a:active {
   align-items: center;
   justify-content: flex-end;
   position: absolute;
-  height: 63.5px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.72) 28%, #ffffff 77%, #ffffff);
   right: 8px;
   top: 8px;
@@ -56,6 +55,9 @@ a:hover, a:active {
     .widget-shadow a i {
       color: #0ba023;
       margin-left: 5px; }
+
+body.sticky .widget-shadow {
+  height: 73.5px; }
 
 @font-face {
   font-family: 'livematch';
@@ -192,6 +194,14 @@ i {
     .cover-team-score {
       margin-right: 20px; }
 
+body.sticky .cover {
+  height: 70px;
+  font-size: 107%; }
+  body.sticky .cover h2 {
+    display: none; }
+  body.sticky .cover .cover-team-logo {
+    width: 10%; }
+
 .card {
   height: 160px;
   font-size: 130%; }
@@ -233,7 +243,7 @@ i {
         border: 0.5px solid #979797;
         border-radius: 50%; }
       .card-container-header-line {
-        width: calc(100% - 125px);
+        width: 7em;
         height: 1px;
         background: #979797; }
         @media only screen and (max-width: 768px) {
@@ -261,6 +271,17 @@ i {
         margin-left: 3px; }
   .card i {
     font-size: 1.3em; }
+
+body.sticky .card {
+  height: 70px; }
+  body.sticky .card .card-container-header {
+    height: 100%; }
+    body.sticky .card .card-container-header-title {
+      margin-right: 5px; }
+    body.sticky .card .card-container-header i {
+      margin: 0 5px 0 8px; }
+  body.sticky .card .card-container-body-comment {
+    display: none; }
 
 .lm-yellow-card:before {
   content: "\e959";

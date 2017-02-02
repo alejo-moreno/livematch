@@ -29,8 +29,7 @@ a:hover, a:active { text-decoration: none; color: black; }
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: absolute;
-    height: 63.5px;
+    position: absolute;    
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.72) 28%, #ffffff 77%, #ffffff);
     right: 8px;
     top: 8px;
@@ -46,6 +45,12 @@ a:hover, a:active { text-decoration: none; color: black; }
             color: $arrow-color;
             margin-left: 5px;
         }   
+    }
+}
+
+body.sticky {
+    .widget-shadow{
+        height: 73.5px;
     }
 }
 

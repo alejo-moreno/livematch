@@ -47,7 +47,7 @@
                 border-radius: 50%;                                
             }
             &-line {                
-                width: calc(100% - 125px);                
+                width: 7em;                
                  @media #{$small-and-down} {
                      width: calc(100% - 60px);                
                  }
@@ -84,6 +84,29 @@
       font-size: 1.3em;
   }
 }
+
+body.sticky {
+  .card {
+      height: 70px;
+      .card-container{
+          &-header {
+              height: 100%;
+              &-title {  
+                  margin-right: 5px;
+              }
+              i {
+                  margin: 0 5px 0 8px;                
+              }
+          }
+            &-body {                                    
+              &-comment{
+                  display: none;
+              }
+            }
+      }
+  }
+}
+
 
 .lm-yellow-card:before {
   content: "\e959";
