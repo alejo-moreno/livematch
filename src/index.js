@@ -1,17 +1,20 @@
 var sortByOrder = require('lodash.sortbyorder');
 var union = require('lodash.union');
+var utils = require('./utils')
 
 var cover = require('./cover/template');
 var card = require('./card/template');
+var scoreHeader = require('./score-header/template');
 
 var $carouselContainer = $('.widget-carousel');
 
 $(document).ready(function () {
-    init(true);
+
     setInterval(() => {
         //  init(false);
         console.log('again')
     }, 10000);
+    init(true);
 });
 
 function init(first) {
@@ -19,18 +22,29 @@ function init(first) {
         var teams = setTeams(data);
         var info = setupData(teams, data);
 
+        if (utils.isMobile()) {
+            $('.widget-container').prepend(scoreHeader.template(teams));
+        } else {
+            $('.widget-shadow a').attr("href", `${data.permalink}/minuto-a-minuto`);
+        }
+
+        /* Dynamic feed **/
         if (first) {
             $carouselContainer.append(cover.template(teams));
-            info.map(matchEvent => $carouselContainer.append(card.template(matchEvent)));
-            $carouselContainer.slick({slidesToShow: 4, variableWidth: true});
+            info.map(matchEvent => $carouselContainer.append(utils.isMobile()
+                ? card.mobileTemplate(matchEvent)
+                : card.desktopTemplate(matchEvent)));
+            $carouselContainer.slick({slidesToShow: 4, variableWidth: true, infinite: false});
         } else {
             $carouselContainer.slick('removeSlide', null, null, true);
             $carouselContainer.slick('addSlide', cover.template(teams));
             for (var matchEvent of info) {
-                $carouselContainer.slick('addSlide', card.template(matchEvent));
+                $carouselContainer.slick('addSlide', utils.isMobile()
+                    ? card.mobileTemplate(matchEvent)
+                    : card.desktopTemplate(matchEvent));
             }
         }
-
+        /**********/
     });
 }
 
@@ -45,6 +59,7 @@ function setupData(teams, data) {
         playEvents = matchEvents['action-soccer-play'].map(p => {
             p['@minutes-elapsed'] == null && (p['@minutes-elapsed'] = 0); //sets to Zero events that happen before the match starts
             validateCardColor(p, teams);
+            p.permalink = data.permalink;
             return p;
         });
     }
@@ -53,12 +68,14 @@ function setupData(teams, data) {
         foulEvents = matchEvents['action-soccer-penalty'].map(f => {
             f['@play-type'] = f['@penalty-level'];
             validateCardColor(f, teams);
+            f.permalink = data.permalink;
             return f;
         });
     }
 
     if (matchEvents['action-soccer-score']) {
         goalEvents = matchEvents['action-soccer-score'].map(g => {
+            g.permalink = data.permalink;
             g['@play-type'] = 'goal';
             g['@event-color'] = ~g['@comment'].indexOf(`(${teams.homeName})`)
                 ? _colorHome
@@ -71,6 +88,7 @@ function setupData(teams, data) {
         substitutionEvents = matchEvents['action-soccer-substitution'].map(s => {
             s['@play-type'] = 'substitution';
             validateCardColor(s, teams);
+            s.permalink = data.permalink;
             return s;
         })
     }
@@ -105,7 +123,8 @@ function getMatchFeed(callback) {
     var urlFeed = `http://syndicator.univision.com/sports-feed-api/soccer/event-commentary/855399?lang=es-419`;
     $.getJSON(urlFeed, function (result) {
         var data = result.data;
-        var matchEvents = data['sports-content']['sports-event']['event-actions']['event-actions-soccer'];
+        callback(data);
+        /*var matchEvents = data['sports-content']['sports-event']['event-actions']['event-actions-soccer'];
         localStorage.playEvents = localStorage.foulEvents = localStorage.goalEvents = localStorage.substitutionEvents = 0;
         if (matchEvents['action-soccer-play']) {
             localStorage.playEvents = matchEvents['action-soccer-play'].length > localStorage.playEvents && (matchEvents['action-soccer-play'].length);
@@ -118,7 +137,7 @@ function getMatchFeed(callback) {
         }
         if (matchEvents['action-soccer-substitution']) {
             localStorage.substitutionEvents = matchEvents['action-soccer-substitution'].length > localStorage.substitutionEvents && (matchEvents['action-soccer-substitution'].length);
-        }
-        callback(data);
+        }*/
+
     });
 }

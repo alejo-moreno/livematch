@@ -1,3 +1,19 @@
 .slick-slide{       
     outline: none !important; 
 }
+
+.slick-prev:before {
+                 visibility:hidden;
+}
+.slick-next{
+    @media #{$large-and-up} {
+        right: 95px;
+        z-index: 1;
+        &:before{
+                content: "\e936";
+                font-family: 'livematch';                        
+                font-weight: bold;  
+                color: $arrow-color;                                  
+        }
+    }
+}

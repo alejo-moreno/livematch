@@ -1,0 +1,14 @@
+.score-header {
+    display: flex;
+    height: 1.5em;
+    color: white;
+    font-weight: bold;
+    &-team {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+            padding: 0 10px 0 10px;
+
+    }    
+}

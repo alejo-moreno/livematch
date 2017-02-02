@@ -3686,12 +3686,11 @@ module.exports = union;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],18:[function(require,module,exports){
-var translations = require('../utils');
+var utils = require('../utils');
 
 
 module.exports = {
-	template: function (matchEvent) {
-		
+	desktopTemplate: function (matchEvent) {		
 		var el = `<div class="card">
 		            <div class="card-container">               
                       <div class="card-container-header"> 				      
@@ -3699,17 +3698,45 @@ module.exports = {
 					  	   ${matchEvent['@minutes-elapsed']}
 					  	  </div>   
 				          <i class="lm-${matchEvent['@play-type']}"></i>
-				          <h4 class="card-container-header-title">${translations.ES[matchEvent['@play-type']]}</h4>
+				          <h4 class="card-container-header-title">${utils.languages.ES[matchEvent['@play-type']]}</h4>
 					  	<div class="card-container-header-oval"></div>
 					  	<div class="card-container-header-line"></div>
                       </div>    
-				      <p class="card-container-comment">${matchEvent['@comment']}</p>				      
+					  <div class="card-container-body"> 				      
+				      	<p class="card-container-body-comment">${matchEvent['@comment']}</p>				      
+					  </div>
+				    </div>	  
+                  </div>`;				  
+		return $.parseHTML(el)[0];
+		
+	},
+	mobileTemplate: function(matchEvent){
+		var el = `<div class="card">
+		            <div class="card-container">               
+                      <div class="card-container-header"> 				      
+				          <div class="card-container-header-timer" style="background:transparent;color:${matchEvent['@event-color'] ? matchEvent['@event-color'] : 'gray' }">
+					  	   ${matchEvent['@minutes-elapsed']}
+					  	  </div>   				          
+					  	<div class="card-container-header-oval" style="background:${matchEvent['@event-color']}"></div>
+					  	<div class="card-container-header-line" style="background:${matchEvent['@event-color']}"></div>
+                      </div>
+					  <div class="card-container-body"> 				      
+					  	<i class="lm-${matchEvent['@play-type']}" style="color:${matchEvent['@event-color']}"></i>						
+						<div> 
+				      		<h4 class="card-container-body-title">${utils.languages.ES[matchEvent['@play-type']]}</h4>    
+				      		<p class="card-container-body-comment">${matchEvent['@comment']}</p>				      						
+							<a href="${matchEvent.permalink}/minuto-a-minuto" target="_blank"> 
+							VER TODO EL MINUTO A MINUTO 
+							<i class="permalink lm-arrow-right"></i>
+							</a>
+						</div>	  
+					  </div>
 				    </div>	  
                   </div>`;
 		return $.parseHTML(el)[0];
 	}
 };
-},{"../utils":21}],19:[function(require,module,exports){
+},{"../utils":22}],19:[function(require,module,exports){
 
 module.exports = {
 	template: function (teams) {
@@ -3734,18 +3761,21 @@ module.exports = {
 },{}],20:[function(require,module,exports){
 var sortByOrder = require('lodash.sortbyorder');
 var union = require('lodash.union');
+var utils = require('./utils')
 
 var cover = require('./cover/template');
 var card = require('./card/template');
+var scoreHeader = require('./score-header/template');
 
 var $carouselContainer = $('.widget-carousel');
 
 $(document).ready(function () {
-    init(true);
+
     setInterval(() => {
         //  init(false);
         console.log('again')
     }, 10000);
+    init(true);
 });
 
 function init(first) {
@@ -3753,18 +3783,29 @@ function init(first) {
         var teams = setTeams(data);
         var info = setupData(teams, data);
 
+        if (utils.isMobile()) {
+            $('.widget-container').prepend(scoreHeader.template(teams));
+        } else {
+            $('.widget-shadow a').attr("href", `${data.permalink}/minuto-a-minuto`);
+        }
+
+        /* Dynamic feed **/
         if (first) {
             $carouselContainer.append(cover.template(teams));
-            info.map(matchEvent => $carouselContainer.append(card.template(matchEvent)));
-            $carouselContainer.slick({slidesToShow: 4, variableWidth: true});
+            info.map(matchEvent => $carouselContainer.append(utils.isMobile()
+                ? card.mobileTemplate(matchEvent)
+                : card.desktopTemplate(matchEvent)));
+            $carouselContainer.slick({slidesToShow: 4, variableWidth: true, infinite: false});
         } else {
             $carouselContainer.slick('removeSlide', null, null, true);
             $carouselContainer.slick('addSlide', cover.template(teams));
             for (var matchEvent of info) {
-                $carouselContainer.slick('addSlide', card.template(matchEvent));
+                $carouselContainer.slick('addSlide', utils.isMobile()
+                    ? card.mobileTemplate(matchEvent)
+                    : card.desktopTemplate(matchEvent));
             }
         }
-
+        /**********/
     });
 }
 
@@ -3779,6 +3820,7 @@ function setupData(teams, data) {
         playEvents = matchEvents['action-soccer-play'].map(p => {
             p['@minutes-elapsed'] == null && (p['@minutes-elapsed'] = 0); //sets to Zero events that happen before the match starts
             validateCardColor(p, teams);
+            p.permalink = data.permalink;
             return p;
         });
     }
@@ -3787,12 +3829,14 @@ function setupData(teams, data) {
         foulEvents = matchEvents['action-soccer-penalty'].map(f => {
             f['@play-type'] = f['@penalty-level'];
             validateCardColor(f, teams);
+            f.permalink = data.permalink;
             return f;
         });
     }
 
     if (matchEvents['action-soccer-score']) {
         goalEvents = matchEvents['action-soccer-score'].map(g => {
+            g.permalink = data.permalink;
             g['@play-type'] = 'goal';
             g['@event-color'] = ~g['@comment'].indexOf(`(${teams.homeName})`)
                 ? _colorHome
@@ -3805,6 +3849,7 @@ function setupData(teams, data) {
         substitutionEvents = matchEvents['action-soccer-substitution'].map(s => {
             s['@play-type'] = 'substitution';
             validateCardColor(s, teams);
+            s.permalink = data.permalink;
             return s;
         })
     }
@@ -3839,7 +3884,8 @@ function getMatchFeed(callback) {
     var urlFeed = `http://syndicator.univision.com/sports-feed-api/soccer/event-commentary/855399?lang=es-419`;
     $.getJSON(urlFeed, function (result) {
         var data = result.data;
-        var matchEvents = data['sports-content']['sports-event']['event-actions']['event-actions-soccer'];
+        callback(data);
+        /*var matchEvents = data['sports-content']['sports-event']['event-actions']['event-actions-soccer'];
         localStorage.playEvents = localStorage.foulEvents = localStorage.goalEvents = localStorage.substitutionEvents = 0;
         if (matchEvents['action-soccer-play']) {
             localStorage.playEvents = matchEvents['action-soccer-play'].length > localStorage.playEvents && (matchEvents['action-soccer-play'].length);
@@ -3852,31 +3898,59 @@ function getMatchFeed(callback) {
         }
         if (matchEvents['action-soccer-substitution']) {
             localStorage.substitutionEvents = matchEvents['action-soccer-substitution'].length > localStorage.substitutionEvents && (matchEvents['action-soccer-substitution'].length);
-        }
-        callback(data);
+        }*/
+
     });
 }
-},{"./card/template":18,"./cover/template":19,"lodash.sortbyorder":16,"lodash.union":17}],21:[function(require,module,exports){
+},{"./card/template":18,"./cover/template":19,"./score-header/template":21,"./utils":22,"lodash.sortbyorder":16,"lodash.union":17}],21:[function(require,module,exports){
+
 module.exports = {
-    'ES': {
-        'game-start': 'Inicia Partido',
-        'line-up-announcement': 'Alineaciones confirmadas',
-        'free-kick': 'Tiro Libre',
-        'foul': 'Falta Cometida',
-        'shot': 'Disparo',
-        'corner': 'Tiro de esquina',
-        'yellow-card': 'Tarjeta Amarilla',
-        'period-end': 'Fin del período',
-        'period-start': 'Inicio del período',
-        'delayed-start': 'Ha comenzado retraso en el juego',
-        'delayed-end': 'Ha terminado retraso en el juego',
-        'substitution': 'Cambio',
-        'yellow-red-card': 'Segunda Tarjeta Amarilla',
-        'red-card': 'Tarjeta Roja',
-        'goal': '¡Golazo!',
-        'game-end': 'Fin del partido',
-        'offside': 'Fuera de lugar'
+	template: function (teams) {
+		var el = `<div class="score-header">
+                    <div class="score-header-team" style="background:${_colorHome}">
+                      <h3 class="score-header-team-name">${teams.homeName.substring(0,3)}</h3>
+                      <h3 class="score-header-team-score">${teams.homeScore}</h3>
+                    </div>                    
+                    <div class="score-header-team" style="background:${_colorAway}">
+                      <h3 class="score-header-team-name">${teams.awayName.substring(0,3)}</h3>
+                      <h3 class="score-header-team-score">${teams.awayScore}</h3>
+                    </div>
+                  </div>`;
+		return $.parseHTML(el)[0];
+	}
+};
+},{}],22:[function(require,module,exports){
+module.exports = {
+    languages: {
+        'ES': {
+            'game-start': 'Inicia Partido',
+            'line-up-announcement': 'Alineaciones confirmadas',
+            'free-kick': 'Tiro Libre',
+            'foul': 'Falta Cometida',
+            'shot': 'Disparo',
+            'corner': 'Tiro de esquina',
+            'yellow-card': 'Tarjeta Amarilla',
+            'period-end': 'Fin del período',
+            'period-start': 'Inicio del período',
+            'delayed-start': 'Ha comenzado retraso en el juego',
+            'delayed-end': 'Ha terminado retraso en el juego',
+            'substitution': 'Cambio',
+            'yellow-red-card': 'Segunda Tarjeta Amarilla',
+            'red-card': 'Tarjeta Roja',
+            'goal': '¡Golazo!',
+            'game-end': 'Fin del partido',
+            'offside': 'Fuera de lugar',
+            'penalty-shot-drawn': 'Penalti marcado',
+            'penalty-shot-conceded': 'Penalti concedido'
+        },
+        'EN': {}
     },
-    'EN': {}
+    isMobile: function isMobile() {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() <= 1023) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
 },{}]},{},[20]);
