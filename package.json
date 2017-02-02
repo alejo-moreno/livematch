@@ -16,7 +16,6 @@
     "node-sass": "^4.4.0",
     "watchify": "^3.9.0"
   },
-  "dependencies": {
-    "express": "^4.14.1"
+  "dependencies": {    
   }
 }
