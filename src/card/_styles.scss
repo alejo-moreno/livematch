@@ -91,6 +91,9 @@ body.sticky {
       .card-container{
           &-header {
               height: 100%;
+              @media #{$small-and-down} {
+                  height: 60%
+              }
               &-title {  
                   margin-right: 5px;
               }

@@ -160,6 +160,10 @@ i {
 .slick-prev:before {
   visibility: hidden; }
 
+@media only screen and (max-width: 768px) {
+  .slick-next {
+    visibility: hidden; } }
+
 @media only screen and (min-width: 993px) {
   .slick-next {
     right: 95px;
@@ -276,6 +280,9 @@ body.sticky .card {
   height: 70px; }
   body.sticky .card .card-container-header {
     height: 100%; }
+    @media only screen and (max-width: 768px) {
+      body.sticky .card .card-container-header {
+        height: 60%; } }
     body.sticky .card .card-container-header-title {
       margin-right: 5px; }
     body.sticky .card .card-container-header i {

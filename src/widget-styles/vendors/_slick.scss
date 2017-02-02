@@ -6,6 +6,9 @@
                  visibility:hidden;
 }
 .slick-next{
+    @media #{$small-and-down} {
+      visibility: hidden;
+    }
     @media #{$large-and-up} {
         right: 95px;
         z-index: 1;
