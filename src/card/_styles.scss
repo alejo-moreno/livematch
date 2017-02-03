@@ -62,7 +62,7 @@
                     margin: 0 0 0 10px;                
             }
             &-comment{
-                        margin: 0 10px;
+                        margin: 0 8px;
                         border-right: solid 0.5px #d1d1d1;     
             }            
             a {
@@ -85,7 +85,7 @@
   }
 }
 
-body.sticky {
+.widget-container.sticky {
   .card {
       height: 70px;
       .card-container{

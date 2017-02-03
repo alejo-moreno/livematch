@@ -3743,14 +3743,14 @@ module.exports = {
 		var el = `<div class="cover">
                     <h2>MINUTO A MINUTO</h2>
                     <div class="cover-team"> 				      
-				        <span style="background:${_colorHome}"></span>   
-				        <img src="${_logoHomeUrl}" class="cover-team-logo">				           
+				        <span style="background:${teams._colorHome}"></span>   
+				        <img src="${teams._logoHomeUrl}" class="cover-team-logo">				           
 				        <h3 class="cover-team-name">${teams.homeName}</h3>
 				        <h3 class="cover-team-score">${teams.homeScore}</h3>				      
                     </div>
                     <div class="cover-team">			          
-			            <span style="background:${_colorAway}"></span>  
-			            <img src="${_logoAwayUrl}" class="cover-team-logo">          				      
+			            <span style="background:${teams._colorAway}"></span>  
+			            <img src="${teams._logoAwayUrl}" class="cover-team-logo">          				      
 			           <h3 class="cover-team-name">${teams.awayName}</h3>
 			           <h3 class="cover-team-score">${teams.awayScore}</h3>				        
 			        </div>
@@ -3767,13 +3767,20 @@ var cover = require('./cover/template');
 var card = require('./card/template');
 var scoreHeader = require('./score-header/template');
 
+var $widgetContainer = $('.widget-container');
 var $carouselContainer = $('.widget-carousel');
+
+var _colorHome = $widgetContainer.data('colorhome');
+var _colorAway = $widgetContainer.data('coloraway');
+var _logoHomeUrl = $widgetContainer.data('logohomeurl');
+var _logoAwayUrl = $widgetContainer.data('logoawayurl');
+var _eventKey = $widgetContainer.data('eventkey');
 
 $(document).ready(function () {
 
     setInterval(() => {
-        //  init(false);
-        console.log('again')
+        init(false);
+        console.log('again');
     }, 10000);
     init(true);
 });
@@ -3807,6 +3814,19 @@ function init(first) {
         }
         /**********/
     });
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        var scrollLimit = utils.isMobile()
+            ? 265
+            : 300;
+
+        if (scroll >= scrollLimit) 
+            $widgetContainer.addClass('sticky');
+        else 
+            $widgetContainer.removeClass('sticky');
+        }
+    );
 }
 
 function setupData(teams, data) {
@@ -3877,15 +3897,33 @@ function setTeams(data) {
     teams.homeScore = data["sports-content"]["sports-event"].team[1]["team-stats"]["@score"];
     teams.awayName = data["sports-content"]["sports-event"].team[0]["team-metadata"].name["@abbreviation"];
     teams.awayScore = data["sports-content"]["sports-event"].team[0]["team-stats"]["@score"];
+    teams._colorHome = _colorHome;
+    teams._colorAway = _colorAway;
+    teams._logoHomeUrl = _logoHomeUrl;
+    teams._logoAwayUrl = _logoAwayUrl;
     return teams;
 }
 
 function getMatchFeed(callback) {
-    var urlFeed = `http://syndicator.univision.com/sports-feed-api/soccer/event-commentary/855399?lang=es-419`;
-    $.getJSON(urlFeed, function (result) {
-        var data = result.data;
-        callback(data);
-        /*var matchEvents = data['sports-content']['sports-event']['event-actions']['event-actions-soccer'];
+    // var urlFeed =
+    // `http://qa.x.univision.com/sports-feed-api/soccer/event-commentary/855399?lan
+    // g =es-419?&jsonp=myJsonMethod&callback=?`;
+    var urlFeed = `http://syndicator.univision.com/sports-feed-api/soccer/event-commentary/${_eventKey}?lang=es-419`;
+
+    $.ajax({
+        url: urlFeed,
+        // Work with the response
+        success: function (response) {
+            var data = response.data;
+            callback(data);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            if (jqXHR.responseJSON) 
+                console.log(jqXHR.responseJSON.message)
+        }
+    });
+
+    /*var matchEvents = data['sports-content']['sports-event']['event-actions']['event-actions-soccer'];
         localStorage.playEvents = localStorage.foulEvents = localStorage.goalEvents = localStorage.substitutionEvents = 0;
         if (matchEvents['action-soccer-play']) {
             localStorage.playEvents = matchEvents['action-soccer-play'].length > localStorage.playEvents && (matchEvents['action-soccer-play'].length);
@@ -3899,19 +3937,17 @@ function getMatchFeed(callback) {
         if (matchEvents['action-soccer-substitution']) {
             localStorage.substitutionEvents = matchEvents['action-soccer-substitution'].length > localStorage.substitutionEvents && (matchEvents['action-soccer-substitution'].length);
         }*/
-
-    });
 }
 },{"./card/template":18,"./cover/template":19,"./score-header/template":21,"./utils":22,"lodash.sortbyorder":16,"lodash.union":17}],21:[function(require,module,exports){
 
 module.exports = {
 	template: function (teams) {
 		var el = `<div class="score-header">
-                    <div class="score-header-team" style="background:${_colorHome}">
+                    <div class="score-header-team" style="background:${teams._colorHome}">
                       <h3 class="score-header-team-name">${teams.homeName.substring(0,3)}</h3>
                       <h3 class="score-header-team-score">${teams.homeScore}</h3>
                     </div>                    
-                    <div class="score-header-team" style="background:${_colorAway}">
+                    <div class="score-header-team" style="background:${teams._colorAway}">
                       <h3 class="score-header-team-name">${teams.awayName.substring(0,3)}</h3>
                       <h3 class="score-header-team-score">${teams.awayScore}</h3>
                     </div>

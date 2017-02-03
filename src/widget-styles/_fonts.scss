@@ -1,12 +1,17 @@
 @font-face {
   font-family: 'livematch';
-  src:  url('fonts/livematch.eot?gnca7z');
-  src:  url('fonts/livematch.eot?gnca7z#iefix') format('embedded-opentype'),
+ /* src:  url('http://univision-brightspot-qa-develop.s3.amazonaws.com/67/fd/09792e3c4f9eb45fbb0bf6a1cdfa/livematch.eot');
+  src:  url('http://univision-brightspot-qa-develop.s3.amazonaws.com/67/fd/09792e3c4f9eb45fbb0bf6a1cdfa/livematch.eot?gnca7z#iefix') format('embedded-opentype'),
+    url('http://univision-brightspot-qa-develop.s3.amazonaws.com/7d/67/7d6b388240c188b6be5a889cb1d8/livematch.ttf?gnca7z') format('truetype'),
+    url('http://univision-brightspot-qa-develop.s3.amazonaws.com/20/b0/c20e07f54d85bc3943b0ae64be28/livematch.woff?gnca7z') format('woff'),
+    url('http://univision-brightspot-qa-develop.s3.amazonaws.com/a2/1a/24c238a24a75b040b3734ee34de8/livematch.svg?gnca7z#livematch') format('svg');*/
+    src:  url('fonts/livematch.eot?gnca7z');
+    src:  url('fonts/livematch.eot?gnca7z#iefix') format('embedded-opentype'),
     url('fonts/livematch.ttf?gnca7z') format('truetype'),
     url('fonts/livematch.woff?gnca7z') format('woff'),
     url('fonts/livematch.svg?gnca7z#livematch') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 i {
